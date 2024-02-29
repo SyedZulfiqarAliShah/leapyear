@@ -1,0 +1,19 @@
+1. CTRL+ /	 = used to comment / uncomment a code-block.
+
+2. CTRL + B	 = Show/Hide  Primary SideBar (file explorer etc)
+
+3. CTRL + SHIFT + P	= Command Palette
+
+4. CTRL + J	 = Show/Hide  Terminal Panel 
+
+5. CTRL + =	 = Zoom In
+
+6. CTRL + -	 = Zoom Out
+
+7. F11		= Full Screen
+
+8. CTRL+SHIFT+ '	= New Terminal
+
+9. ! + TAB		= to create a new php code structure in HTML
+
+10.
