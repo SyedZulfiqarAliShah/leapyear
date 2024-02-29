@@ -1,0 +1,54 @@
+CTRL + /   = 
+
+1. {{}} is used to echo anything (means print/output anything) For example, {{$name}}, {{time()}}, {{"Hello"}}
+
+2. @ is used as prefix to any statement in Blade, for example @if , @for , @switch etc
+
+3. 	@if()
+	@endif
+
+4. 	@if()
+	@else
+	@endif
+
+5. 	@if
+	@elseif()
+	@else
+	@endif
+
+6. 	@unless($ID == 150)			 
+		{{"This code will execute when the value of $ID is NOT EQUAL to 150. And it will NOT execute if $ID is equal to 150"}}
+	@endunless
+
+7. 	@isset()				checks if a variable is set or not (means if a variable is empty or not)
+	@endisset
+
+8. 	@empty()
+	@endempty
+
+9. 	@include('view-name')
+	This include blade statement is used to inlcude a view into another view. The view in which this statement is written is called parent view and the view included in paranthesis is called
+	sub-view.
+	Benefit of this setting is that it is easy to segment the long view into multiple views and then include the parts as needed. Second and most important benefit is that suppose a view is
+	repeatedly needed in many other views so in such a case when changes are required/desired in this single view which is needed at various places, then such changes are easily done
+	at a single location and effect is obtained on multiple locations.
+	All variables of Parent view are available in Child/Subview view.
+
+10.	@includeIf('view-name')	if view is not present then no error is generated.
+
+11.	@includeWhen(true)
+
+12.	@includeUnless(false)
+
+13. 	@each('view_name' , Array_name , array-variable)                 Array_name and array-variable are just like in foreach(Array_name as array-variable)
+	The above construct is used when we have to traverse an array through foreach and have to include a view. So instead of doing these two tasks separately, it allows us to do it in
+	a single statement @each.
+	@each('view_name' , Array_name , array-variable , View_name_which_will_be_called_if_array_is_empty)           This is more robust.
+
+14. 	@once
+	@endonce	The code included inside this construct will be executed only once per rendering cycle.
+
+15. 	@php
+	@endphp		Very important: it allows us to run PHP code inside the view template.
+
+16. 
